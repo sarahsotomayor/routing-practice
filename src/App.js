@@ -11,15 +11,16 @@ import {
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/home" element={<Home/>}/>
-          <Route path="/:wordOrNumber" element={<WordOrNumber/>}/>
+          <Route path="/:userInput" element={<WordOrNumber/>}/>
         </Routes>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
+
   );
 }
 

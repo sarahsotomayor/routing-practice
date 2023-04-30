@@ -1,9 +1,11 @@
 import React from 'react';
-import {useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom';
 
 const WordOrNumber = (props) => {
 
     const {userInput} = useParams();
+
+    console.log(userInput);
 
     return (
         <div>
@@ -11,7 +13,8 @@ const WordOrNumber = (props) => {
         </div>
     )
 
-    /*
+
+    /* NOTES: ternary above is shorthand for below if statement:
     if (isNaN(userInput)) {
         return (
             <h1>The word is: {userInput}</h1>
